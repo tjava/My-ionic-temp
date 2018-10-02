@@ -3,10 +3,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { AboutPage } from '../pages/about/about';
-import { ContactPage } from '../pages/contact/contact';
-import { HomePage } from '../pages/home/home';
+import { MusicPage } from '../pages/music/music';
+import { NewsPage } from '../pages/news/news';
+import { VideoPage } from '../pages/video/video';
 import { TabsPage } from '../pages/tabs/tabs';
+import { IntroPage } from '../pages/intro/intro'; 
+import { LoginPage } from '../pages/login/login';
+import {ParallaxHeader} from '../directives/parallax-header/parallax-header';
+import { ProfilePage } from '../pages/profile/profile';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -14,10 +18,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    MusicPage,
+    NewsPage,
+    VideoPage,
+    TabsPage,
+    IntroPage,
+    LoginPage,
+    ParallaxHeader,
+    ProfilePage
   ],
   imports: [
     BrowserModule,
@@ -26,10 +34,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    AboutPage,
-    ContactPage,
-    HomePage,
-    TabsPage
+    MusicPage,
+    NewsPage,
+    VideoPage,
+    TabsPage,
+    IntroPage,
+    LoginPage,
+    ProfilePage
   ],
   providers: [
     StatusBar,
